@@ -10,3 +10,4 @@ https://100dayscss.com/ 의 예제 진행기
 - [005 - Statistic](https://saintsilver.github.io/CSS-100-Days-Practice/005-Statistic/index.html)  
 - [006 - Profile](https://saintsilver.github.io/CSS-100-Days-Practice/006-Profile/index.html)  
 - [007 - Notifications](https://saintsilver.github.io/CSS-100-Days-Practice/007-Notifications/index.html) 
+- [008 - Metaballs](https://saintsilver.github.io/CSS-100-Days-Practice/008-Metaballs/index.html) 
