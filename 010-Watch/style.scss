@@ -1,0 +1,136 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #4C4C4C;
+    color: #fff;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.center {
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    top: 87px;
+    left: 87px;
+    background: #242424;
+    border: 7px solid #3A3A3A;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.date {
+    position: absolute;
+    top: 68px;
+    width: 100%;
+}
+
+.time {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 4px 0;
+}
+
+.beat {
+    position: absolute;
+    top: 129px;
+    left: 57px;
+
+    span {
+        float: left;
+        color: #F85B5B;
+        font-size: 10px;
+        margin: 1px 4px 0 0;
+        animation: heartbeat 0.85s ease-in-out infinite;
+    }
+}
+
+.energy {
+    position: absolute;
+    top: 129px;
+    right: 55px;
+}
+
+@for $i from 1 to 16 {
+    .point-set-#{$i} {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        height: 188px;
+        width: 188px;
+        transform: rotate((($i - 1) * 6) + deg);
+
+        .point-1 {
+            position: absolute;
+            top: 0;
+            left: 93px;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background: #D3D3D3;
+        }
+
+        .point-2 {
+            @extend .point-1;
+            top: 93px;
+            left: auto;
+            right: 0;
+        }
+
+        .point-3 {
+            @extend .point-1;
+            top: auto;
+            bottom: 0;
+        }
+
+        .point-4 {
+            @extend .point-1;
+            top: 93px;
+            left: 0;
+        }
+    }
+}
+
+.spinner {
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+
+    g {
+        transform-origin: center center;
+    }
+
+    circle {
+        stroke: #F85B5B;
+        stroke-width: 2px;
+        fill: none;
+        stroke-dasharray: 0, 100;
+        transition: stroke-dasharray 0.2s cubic-bezier(0.2, 0.5, 0, 1);
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
