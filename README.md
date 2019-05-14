@@ -19,3 +19,5 @@ https://100dayscss.com/ 의 예제 진행기
 - [014 - Byciclopter](https://saintsilver.github.io/CSS-100-Days-Practice/014-Byciclopter/index.html) 
 - [015 - Upload](https://saintsilver.github.io/CSS-100-Days-Practice/015-Upload/index.html) 
 - [016 - Blobby](https://saintsilver.github.io/CSS-100-Days-Practice/016-Blobby/index.html) 
+- ~~017 - Penrose triangle~~
+- [018 - Elastic](https://saintsilver.github.io/CSS-100-Days-Practice/018-Elastic/index.html) 
