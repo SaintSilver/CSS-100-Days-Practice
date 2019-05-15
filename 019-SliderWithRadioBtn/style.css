@@ -1,0 +1,122 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.circle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 175px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.circle#label-1 {
+  left: 115px;
+}
+
+.circle#label-2 {
+  left: 175px;
+}
+
+.circle#label-3 {
+  left: 235px;
+}
+
+.active {
+  position: absolute;
+  z-index: 20;
+  width: 40px;
+  height: 40px;
+  top: 180px;
+  left: 120px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.bg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: #3498db;
+  border-left: 400px solid #9b59b6;
+  border-right: 400px solid #1abc9c;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+      transform: translateX(0);
+  z-index: 5;
+}
+
+#check-1:checked ~ .active {
+  -webkit-transform: translateX(0px);
+          -ms-transform: translateX(0px);
+      transform: translateX(0px);
+}
+
+#check-1:checked ~ .bg {
+  -webkit-transform: translateX(0px);
+          -ms-transform: translateX(0px);
+      transform: translateX(0px);
+}
+
+#check-2:checked ~ .active {
+  -webkit-transform: translateX(60px);
+          -ms-transform: translateX(60px);
+      transform: translateX(60px);
+}
+
+#check-2:checked ~ .bg {
+  -webkit-transform: translateX(-400px);
+          -ms-transform: translateX(-400px);
+      transform: translateX(-400px);
+}
+
+#check-3:checked ~ .active {
+  -webkit-transform: translateX(120px);
+          -ms-transform: translateX(120px);
+      transform: translateX(120px);
+}
+
+#check-3:checked ~ .bg {
+  -webkit-transform: translateX(-800px);
+          -ms-transform: translateX(-800px);
+      transform: translateX(-800px);
+}
